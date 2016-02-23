@@ -44,11 +44,17 @@ var sass_lint = function sass_lint() {
     })
   ];
 
-  var task = gulp.src(
-      ['app/assets/_scss/**/*.scss', '!app/assets/_scss/vendor/**/*.scss']
-    )
+  var task = gulp.src([
+      '**/*.scss',
+      '!**/_*.scss',
+      '!bower_components/**/*.scss',
+      '!node_modules/**/*.scss'
+    ])
+
     .pipe(postcss(processors, {syntax: syntax_scss}));
     .pipe(.failOnError());
 
   return task;
 });
+
+module.exports.sass_lint = sass_lint;

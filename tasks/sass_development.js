@@ -6,7 +6,13 @@ var autoprefixer = require('gulp-autoprefixer');
 
 var sass_development = function sass_development() {
   var task = gulp
-    .src( 'app/assets/_scss/*.scss')
+
+    .src([
+      '**/*.scss',
+      '!**/_*.scss',
+      '!bower_components/**/*.scss',
+      '!node_modules/**/*.scss'
+    ])
 
     .pipe(sourcemaps.init())
     .pipe(sass.sync().on('error', plugins.sass.logError))
@@ -16,7 +22,9 @@ var sass_development = function sass_development() {
     .pipe(sourcemaps.write())
 
     // .pipe(plugins.browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('.temp/development/assets/css'));
+    .pipe(gulp.dest('./public'));
 
   return task;
 }
+
+module.exports.sass_development = sass_development;

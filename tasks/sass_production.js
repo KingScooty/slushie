@@ -15,7 +15,12 @@ var sass_production = function sass_production() {
   };
 
   var task = gulp
-    .src( 'app/assets/_scss/*.scss')
+    .src([
+      '**/*.scss',
+      '!**/_*.scss',
+      '!bower_components/**/*.scss',
+      '!node_modules/**/*.scss'
+    ])
 
     .pipe(sass.sync().on('error', plugins.sass.logError))
     // Minify
@@ -23,7 +28,9 @@ var sass_production = function sass_production() {
     // Autoprefix to official supported browsers
     .pipe(autoprefixer(autoprefixer_config))
 
-    .pipe(gulp.dest('.temp/production/assets/css'));
+    .pipe(gulp.dest('./public'));
 
   return task;
 }
+
+module.exports.sass_production = sass_production;
