@@ -1,2 +1,5 @@
 .DS_store
 node_modules
+
+public
+tests/public
