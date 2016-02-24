@@ -1,6 +1,6 @@
 {
   "name": "slushie",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Literally an entire Gulp pipeline for free, just add water.",
   "main": "index.js",
   "scripts": {
