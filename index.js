@@ -1,6 +1,7 @@
 //Sass compile, autoprefix, cssnano, scoping thingy
 var gulp = require('gulp');
 
+// var watch = require('gulp-watch');
 var _ = require('lodash');
 
 var linting = require('./tasks/linting');
@@ -23,6 +24,11 @@ module.exports = function(user_settings) {
   gulp.task('sass:production', ['sass-lint'], function() {
     return sass_production(settings.sass_production);
   });
+
+  gulp.task('watch', ['sass:development'], function() {
+    gulp.watch(settings.watch.destination, ['sass:development']);
+  });
+
 }
 
 // Watch task
