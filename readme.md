@@ -1,23 +1,23 @@
-#Morph GrandStand Gulp
-This little tool provides a nicely packaged way of compiling Sass files.
+#Slushie
+Literally an entire Gulp pipeline for free, just add water.
 
 ##Installing (WIP -- this bit might not work properly yet)
 
 Install using the following command[?]:
 
-`morph install morph-grandstand-gulp --save-dev`
+`npm install slushie --save-dev`
 
 Create a `gulpfile.js` in your project with the following:
 
 ```js
-var morph_grandstand_gulp = require('morph-grandstand-gulp');
+var slushie = require('slushie');
 
 var config = {};
 
-morph_grandstand_gulp(config);
+slushie(config);
 ```
 
-This should work out of the box thanks to the carefully considered defaults set for morph projects. However, if you do want to override any of the presets, take a look at the default settings in  [default.js](https://github.com/bbc/morph-grandstand-gulp/blob/master/defaults.js) and override as necessary in the `config` object in your newly created `gulpfile`.
+This should work out of the box thanks to the carefully considered defaults set. However, if you do want to override any of the presets, take a look at the default settings in  [default.js](https://github.com/KingScooty/slushie/blob/master/defaults.js) and override as necessary in the `config` object in your newly created `gulpfile`.
 
 
 ## Main gulp tasks available
