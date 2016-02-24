@@ -1,7 +1,7 @@
 #Slushie (WIP)
 Literally an entire* Gulp pipeline for free, just add water.
 
-\*(just Sass for now)
+\*(just Sass for now---more coming super soon!)
 
 ##Installing
 
