@@ -3,7 +3,9 @@ This little tool provides a nicely packaged way of compiling Sass files.
 
 ##Installing (WIP -- this bit might not work properly yet)
 
-`morph install morph-grandstand-gulp`
+Install using the following command[?]:
+
+`morph install morph-grandstand-gulp --save-dev`
 
 Create a `gulpfile.js` in your project with the following:
 
