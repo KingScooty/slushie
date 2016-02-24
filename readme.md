@@ -28,4 +28,4 @@ Commands  | Meaning
 `gulp`  | alias for `gulp watch`
 `gulp watch` | Sets up a Sass watch task to lint, and recompile the files in dev/fast mode (uncompressed, unoptimised) on change for development.
 `gulp sass:lint` | Lints the Sass files and reports any errors.
-`gulp build:production`  | Builds the Sass ready for production. Sass files are fully optimised, and minified. Calls sass:production in sequence internally.
+`gulp build:production`  | Builds the Sass ready for production. Sass files are fully optimised, and minified. Calls sass:production and other (coming soon) tasks in sequence internally.
