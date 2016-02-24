@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var _ = require('lodash');
 var runSequence = require('run-sequence');
 
-var linting = require('./tasks/linting');
+var sass_lint = require('./tasks/sass_lint');
 var sass_development = require('./tasks/sass_development');
 var sass_production = require('./tasks/sass_production');
 
@@ -23,7 +23,7 @@ module.exports = function(user_settings) {
    */
 
   gulp.task('sass:lint', function() {
-    return linting();
+    return sass_lint();
   });
 
   gulp.task('sass:development', ['sass:lint'], function() {
