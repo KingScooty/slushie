@@ -1,7 +1,9 @@
-#Slushie
-Literally an entire Gulp pipeline for free, just add water.
+#Slushie (WIP)
+Literally an entire* Gulp pipeline for free, just add water.
 
-##Installing (WIP -- this bit might not work properly yet)
+\*(just Sass for now)
+
+##Installing
 
 Install using the following command[?]:
 
