@@ -12,9 +12,9 @@ Create a `gulpfile.js` in your project with the following:
 ```js
 var slushie = require('slushie');
 
-var config = {};
+var water = {};
 
-slushie(config);
+slushie(water);
 ```
 
 This should work out of the box thanks to the carefully considered defaults set. However, if you do want to override any of the presets, take a look at the default settings in  [default.js](https://github.com/KingScooty/slushie/blob/master/defaults.js) and override as necessary in the `config` object in your newly created `gulpfile`.
@@ -26,4 +26,4 @@ Commands  | Meaning
 `gulp`  | alias for `gulp watch`
 `gulp watch` | Sets up a Sass watch task to lint, and recompile the files in dev/fast mode (uncompressed, unoptimised) on change for development.
 `gulp sass:lint` | Lints the Sass files and reports any errors.
-`gulp build:production`  | Builds the Sass ready for production. Sass files are fully optimised, and minified. Calls sass:production and prefix in sequence internally.
+`gulp build:production`  | Builds the Sass ready for production. Sass files are fully optimised, and minified. Calls sass:production in sequence internally.
