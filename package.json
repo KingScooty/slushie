@@ -1,7 +1,7 @@
 {
-  "name": "morph-grandstand-gulp",
+  "name": "Slushie",
   "version": "1.0.0",
-  "description": "Shared gulp sass tasks for morph Grandstand",
+  "description": "Literally an entire Gulp pipeline for free, just add water.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
