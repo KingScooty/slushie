@@ -1,7 +1,5 @@
-//Sass compile, autoprefix, cssnano, scoping thingy
 var gulp = require('gulp');
 
-// var watch = require('gulp-watch');
 var _ = require('lodash');
 
 var linting = require('./tasks/linting');
@@ -13,6 +11,10 @@ var default_settings = require('./defaults');
 
 module.exports = function(user_settings) {
 
+  /**
+   * Merge those config settings!
+   * Here's where we merge the default settings with the user settings.
+   */
   var settings = _.merge({}, default_settings, user_settings);
 
   gulp.task('sass-lint', function() {
