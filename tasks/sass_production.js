@@ -16,13 +16,7 @@ var sass_production = function sass_production(settings) {
   };
 
   var task = gulp
-    .src([
-      '**/*.scss',
-      '!**/_*.scss',
-      '!bower_components/**/*.scss',
-      '!node_modules/**/*.scss'
-    ])
-
+    .src(settings.source)
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(cssnano(nano_options))
     .pipe(gulp.dest(settings.destination));
