@@ -7,6 +7,8 @@ var _ = require('lodash');
 var linting = require('./tasks/linting');
 var sass_development = require('./tasks/sass_development');
 var sass_production = require('./tasks/sass_production');
+var gs_prefix_classes = require('./tasks/prefix');
+
 var default_settings = require('./defaults');
 
 module.exports = function(user_settings) {
@@ -27,6 +29,10 @@ module.exports = function(user_settings) {
 
   gulp.task('watch', ['sass:development'], function() {
     gulp.watch(settings.watch.destination, ['sass:development']);
+  });
+
+  gulp.task('prefix', ['sass:production'], function() {
+    return gs_prefix_classes();
   });
 
 }
