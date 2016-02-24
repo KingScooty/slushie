@@ -15,8 +15,10 @@
     "gulp-postcss": "^6.1.0",
     "gulp-sass": "^2.2.0",
     "gulp-sourcemaps": "^1.6.0",
+    "lodash": "^4.5.1",
     "postcss-reporter": "^1.3.3",
     "postcss-scss": "^0.1.5",
-    "stylelint": "^4.4.0"
+    "stylelint": "^4.4.0",
+    "stylelint-statement-max-nesting-depth": "^2.0.1"
   }
 }

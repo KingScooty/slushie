@@ -7,6 +7,11 @@ var stylelint    = require('stylelint');
 
 var sass_lint = function sass_lint() {
 
+  /**
+   * Linting rule documentation
+   * https://github.com/stylelint/stylelint/blob/master/docs/user-guide/rules.md
+   */
+
   var stylelintConfig = {
     "plugins": [
       "stylelint-statement-max-nesting-depth"
@@ -32,29 +37,28 @@ var sass_lint = function sass_lint() {
       "selector-list-comma-newline-after": "always",
       "selector-no-id": true,
       "string-quotes": "double",
-      "value-no-vendor-prefix": true
-      "statement-max-nesting-depth": [3, { countAtRules: false }],
+      "value-no-vendor-prefix": true,
+      "statement-max-nesting-depth": [3, { countAtRules: false }]
     }
   };
 
   var processors = [
     stylelint(stylelintConfig),
     reporter({
-      clearMessages: true
+      clearMessages: true,
+      throwError: true
     })
   ];
 
   var task = gulp.src([
       '**/*.scss',
-      '!**/_*.scss',
       '!bower_components/**/*.scss',
       '!node_modules/**/*.scss'
     ])
 
     .pipe(postcss(processors, {syntax: syntax_scss}));
-    .pipe(.failOnError());
 
   return task;
-});
+};
 
-module.exports.sass_lint = sass_lint;
+module.exports = sass_lint;

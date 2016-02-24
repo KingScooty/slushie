@@ -4,7 +4,8 @@ var sourcemaps   = require('gulp-sourcemaps');
 var sass         = require('gulp-sass');
 var autoprefixer = require('gulp-autoprefixer');
 
-var sass_development = function sass_development() {
+var sass_development = function sass_development(settings) {
+
   var task = gulp
 
     .src([
@@ -15,16 +16,15 @@ var sass_development = function sass_development() {
     ])
 
     .pipe(sourcemaps.init())
-    .pipe(sass.sync().on('error', plugins.sass.logError))
+    .pipe(sass.sync().on('error', sass.logError))
 
     // Default prefix settings for development
     .pipe(autoprefixer())
     .pipe(sourcemaps.write())
 
-    // .pipe(plugins.browserSync.reload({ stream: true }))
-    .pipe(gulp.dest('./public'));
+    .pipe(gulp.dest(settings.destination));
 
   return task;
 }
 
-module.exports.sass_development = sass_development;
+module.exports = sass_development;
