@@ -46,6 +46,8 @@ module.exports = function(user_settings) {
   gulp.task('watch', ['sass:development'], function() {
     gulp.watch(settings.watch.destination, ['sass:development']);
   });
+  
+  gulp.task('default', ['watch']);
 
   gulp.task('build:production', function(callback) {
     runSequence(
