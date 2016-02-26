@@ -5,7 +5,11 @@ Literally an entire* Gulp pipeline for free, just add water.
 
 ##Installing
 
-Install using the following command[?]:
+Ensure you have gulp installed.
+
+`npm install -g gulp`
+
+Then install Slushie in your project using the following command:
 
 `npm install slushie --save-dev`
 
