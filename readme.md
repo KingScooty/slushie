@@ -1,10 +1,8 @@
 #Slushie (WIP)
-Literally an entire* Gulp pipeline for free, just add water.
-
+Literally an entire* Gulp pipeline for free installed via npm. Just add water!
 \*(just Sass for now---more coming super soon!)
 
-Sass tasks include:
-
+Slushie currently comes with the following Sass gulp tasks:
 - Development
   - Linting
   - Sourcemaps
@@ -16,6 +14,7 @@ Sass tasks include:
   - Optimisation *(Sorting, removing duplicates etc.)*
   - Minification
 
+You'll get them all for free just by installing via npm! Magic!
 
 ##Installing
 
