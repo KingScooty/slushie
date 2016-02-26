@@ -3,6 +3,20 @@ Literally an entire* Gulp pipeline for free, just add water.
 
 \*(just Sass for now---more coming super soon!)
 
+Sass tasks include:
+
+- Development
+  - Linting
+  - Sourcemaps
+  - Autoprefixing
+  - Watch
+- Production
+  - Linting
+  - Autoprefixing
+  - Optimisation *(Sorting, removing duplicates etc.)*
+  - Minification
+
+
 ##Installing
 
 Ensure you have gulp installed.
