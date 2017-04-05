@@ -1,4 +1,5 @@
-#Slushie (Work in progress)
+Slushie (Work in progress)
+---
 Literally an entire* Gulp pipeline for free installed via npm. Just add water!
 \*(just Sass for now---more coming super soon!)
 
@@ -18,7 +19,7 @@ Slushie currently comes with the following Sass gulp tasks:
 
 You'll get them all for free just by installing via npm! Magic!
 
-##Installing
+## Installing
 
 Ensure you have gulp installed.
 
