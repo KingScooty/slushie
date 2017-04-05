@@ -34,7 +34,19 @@ Create a `gulpfile.js` in your project with the following:
 ```js
 var slushie = require('slushie');
 
-var water = {};
+var water = {}; // this is your config object
+
+/**
+
+EXAMPLE:
+
+var water = {
+  sass_development: {
+    destination: './new_destination'
+  }
+}
+
+*/
 
 slushie(water);
 ```
