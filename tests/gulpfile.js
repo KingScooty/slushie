@@ -1,5 +1,5 @@
-var morph_grandstand_gulp = require('../index');
+var slushie = require('../index');
 
 var config = {};
 
-morph_grandstand_gulp(config);
+slushie(config);

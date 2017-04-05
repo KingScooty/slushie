@@ -13,16 +13,13 @@ var sass_lint = function sass_lint() {
    */
 
   var stylelintConfig = {
-    "plugins": [
-      "stylelint-statement-max-nesting-depth"
-    ],
     "rules": {
       "block-no-empty": true,
       "color-no-invalid-hex": true,
       "declaration-colon-space-after": "always",
       "declaration-colon-space-before": "never",
       "function-comma-space-after": "always",
-      "function-url-quotes": "double",
+      "function-url-quotes": "always",
       "media-feature-colon-space-after": "always",
       "media-feature-colon-space-before": "never",
       "media-feature-name-no-vendor-prefix": true,
@@ -30,15 +27,19 @@ var sass_lint = function sass_lint() {
       "number-leading-zero": "never",
       "number-no-trailing-zeros": true,
       "property-no-vendor-prefix": true,
-      "rule-no-duplicate-properties": true,
-      "declaration-block-no-single-line": true,
-      "rule-trailing-semicolon": "always",
+      "declaration-block-no-duplicate-properties": true,
+      "block-opening-brace-newline-after": "always",
+      "block-closing-brace-newline-before": "always",
+      "declaration-block-trailing-semicolon": "always",
       "selector-list-comma-space-before": "never",
       "selector-list-comma-newline-after": "always",
       "selector-no-id": true,
       "string-quotes": "double",
       "value-no-vendor-prefix": true,
-      "statement-max-nesting-depth": [3, { countAtRules: false }]
+      "max-nesting-depth": [
+        3,
+        { ignore: ["blockless-at-rules"] }
+      ]
     }
   };
 
