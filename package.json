@@ -1,13 +1,26 @@
 {
   "name": "slushie",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Literally an entire Gulp pipeline for free, just add water.",
+  "keywords": [
+    "gulp",
+    "pipeline",
+    "css",
+    "scss",
+    "lint",
+    "linter",
+    "stylelint"
+  ],
+  "author": "Scotty Vernon <scott@wildflame.co.uk> (http://wildflame.co.uk)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kingscooty/slushie.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Scotty Vernon <scott.vernon@gmail.com> (http://wildflame.co.uk)",
-  "license": "ISC",
   "dependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
