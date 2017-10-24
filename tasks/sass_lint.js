@@ -33,7 +33,7 @@ var sass_lint = function sass_lint() {
       "declaration-block-trailing-semicolon": "always",
       "selector-list-comma-space-before": "never",
       "selector-list-comma-newline-after": "always",
-      "selector-no-id": true,
+      "selector-max-id": 0,
       "string-quotes": "double",
       "value-no-vendor-prefix": true,
       "max-nesting-depth": [
